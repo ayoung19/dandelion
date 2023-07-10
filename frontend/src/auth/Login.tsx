@@ -25,15 +25,15 @@ export const Login = () => {
       config={{
         products: [Products.emailMagicLinks, Products.oauth],
         emailMagicLinksOptions: {
-          loginRedirectURL: "http://localhost:3000",
+          loginRedirectURL: process.env.REACT_APP_STYTCH_REDIRECT_URL || "",
           loginExpirationMinutes: 60,
-          signupRedirectURL: "http://localhost:3000",
+          signupRedirectURL: process.env.REACT_APP_STYTCH_REDIRECT_URL || "",
           signupExpirationMinutes: 60,
         },
         oauthOptions: {
           providers: [{ type: OAuthProviders.Google }],
-          loginRedirectURL: "http://localhost:3000",
-          signupRedirectURL: "http://localhost:3000",
+          loginRedirectURL: process.env.REACT_APP_STYTCH_REDIRECT_URL || "",
+          signupRedirectURL: process.env.REACT_APP_STYTCH_REDIRECT_URL || "",
         },
       }}
       styles={styles}
