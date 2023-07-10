@@ -45,7 +45,9 @@ export const createContext = async ({
         user: await prisma.user.create({ data: { email } }),
       };
     }
-  } catch {
+  } catch (e) {
+    console.log(e);
+
     return { user: null };
   }
 };
