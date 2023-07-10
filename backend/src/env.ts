@@ -15,5 +15,6 @@ const env = (name: string) => {
 const PORT = env("PORT");
 const STYTCH_PROJECT_ID = env("STYTCH_PROJECT_ID");
 const STYTCH_SECRET = env("STYTCH_SECRET");
+const STYTCH_ENV = env("STYTCH_ENV");
 
-export { PORT, STYTCH_PROJECT_ID, STYTCH_SECRET };
+export { PORT, STYTCH_PROJECT_ID, STYTCH_SECRET, STYTCH_ENV };

@@ -1,6 +1,6 @@
 import { PrismaClient } from "@prisma/client";
 import { Client, envs } from "stytch";
-import { STYTCH_PROJECT_ID, STYTCH_SECRET } from "./env";
+import { STYTCH_ENV, STYTCH_PROJECT_ID, STYTCH_SECRET } from "./env";
 import { CreateExpressContextOptions } from "@trpc/server/adapters/express";
 import { TRPCError, inferAsyncReturnType, initTRPC } from "@trpc/server";
 import { z } from "zod";
@@ -10,7 +10,7 @@ const prisma = new PrismaClient();
 const client = new Client({
   project_id: STYTCH_PROJECT_ID,
   secret: STYTCH_SECRET,
-  env: envs.test,
+  env: STYTCH_ENV,
 });
 
 type Context = inferAsyncReturnType<typeof createContext>;
