@@ -7,8 +7,7 @@ import cors from "cors";
 import helmet from "helmet";
 import * as trpcExpress from "@trpc/server/adapters/express";
 import { PORT } from "./env";
-import { createContext } from "./middleware";
-import { appRouter } from "./trpc";
+import { appRouter, createContext } from "./trpc";
 
 const PORT_NUMBER = parseInt(PORT, 10);
 
