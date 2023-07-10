@@ -1,7 +1,16 @@
 import { trpc } from "../utils/trpc";
 
-export const Test = () => {
-  const helloQuery = trpc.hello.useQuery();
+// export const Test = () => {
+//   const helloQuery = trpc.wishes.byUserId.useQuery({});
 
-  return <div>{helloQuery.data}</div>;
-};
+//   if (helloQuery.error) {
+//     return null;
+//   }
+
+//   return (
+//     <>
+//       <div>{helloQuery.data}</div>
+//       <button onClick={() => helloQuery.refetch()}>refetch</button>
+//     </>
+//   );
+// };

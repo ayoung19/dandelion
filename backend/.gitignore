@@ -2,6 +2,11 @@
 # Created by https://www.gitignore.io/api/node,linux,macos,windows,intellij,webstorm,jetbrains,visualstudio,visualstudiocode
 # Edit at https://www.gitignore.io/?templates=node,linux,macos,windows,intellij,webstorm,jetbrains,visualstudio,visualstudiocode
 
+### Prisma ###
+
+prisma/dev.db
+prisma/dev.db-journal
+
 ### Intellij ###
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio and WebStorm
 # Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
