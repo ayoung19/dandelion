@@ -15,7 +15,7 @@ export const App = () => {
     trpc.createClient({
       links: [
         httpBatchLink({
-          url: "http://localhost:3010/trpc",
+          url: process.env.REACT_APP_TRPC_ENDPOINT || "",
           async headers() {
             return {
               authorization: Cookies.get("stytch_session_jwt"),
